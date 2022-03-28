@@ -1,0 +1,24 @@
+html {
+  font-size: 10px;
+}
+
+.map {
+  overflow-x: auto;
+  width: 100%;
+  max-width: 80rem;
+  height: 70vh;
+  border-radius: 2rem;
+  max-height: 80rem;
+}
+.map::-webkit-scrollbar {
+  display: none !important;
+}
+.map-inner {
+  overflow-x: auto;
+  overflow: hidden;
+}
+.map-inner-img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,24 @@
+.map {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 80rem;
+    height: 70vh;
+    border-radius: 2rem;
+    &::-webkit-scrollbar{
+        display: none !important;
+    }
+    max-height: 80rem;
+    &-inner {
+
+        overflow-x: auto;
+
+    
+        overflow: hidden;
+
+        &-img {
+
+            width: 100%;
+            // height: 1;
+        }
+    }
+}
