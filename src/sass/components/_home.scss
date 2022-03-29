@@ -64,11 +64,11 @@
                         z-index: 5;
                         // top: 50%;
                         // width: 100%;
-                        
+
                         transform: translate(-50%, 0) scale(1.4);
                         z-index: 20;
                         backdrop-filter: blur(40px);
-                      
+
                     }
 
                     &:nth-child(4) {
@@ -160,5 +160,142 @@
         height: 80vh;
         color: $secondary;
         background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    }
+
+    &-safety {
+        clip-path: polygon(20% 0%, 0% 20%, 0 100%, 100% 100%, 100% 20%, 80% 0%, 80% 20%, 70% 0%, 30% 0%, 20% 20% );
+        background-image: linear-gradient(to right, #12af6e, #0f3443);
+        text-align: center;
+
+        &-header {
+            font-size: 4rem;
+            color: #fff;
+            background-image: linear-gradient(to right, #D8097E, #8C579C, #24468E);
+            display: inline-block;
+            margin: 0 auto;
+
+            padding: 1rem;
+            border-radius: 2rem;
+        }
+        margin-bottom: 10rem;
+        padding:5rem 5rem 10rem;
+
+        &-container {
+            margin: 10rem 0 4rem 0;
+            // padding: 
+            display: flex;
+            grid-gap: 2rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-card {
+            width: 30rem;
+
+            &:nth-child(1) {
+
+                .home-safety-card-front {
+                    background-color: #004DDD;
+                }
+
+                .home-safety-card-back {
+                    background-color: #004DDD;
+                }
+            }
+
+            &:nth-child(2) {
+
+                .home-safety-card-front {
+                    background-color: #674BAD;
+                }
+
+                .home-safety-card-back {
+                    background-color: #674BAD;
+                }
+            }
+
+            &:nth-child(3) {
+                .home-safety-card-front {
+                    background-color: #8D0549;
+                }
+
+                .home-safety-card-back {
+                    background-color: #8D0549;
+                }
+            }
+            perspective: 1000px;
+            position: relative;
+
+            &-front {
+                position: absolute;
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
+                width: 100%;
+                backface-visibility: hidden;
+                border-radius: 2rem;
+                height: 100%;
+                display: flex;
+
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+                justify-content: center;
+                align-items: center;
+                transition: all 1s;
+                perspective: 1000px;
+                &-img {
+                    width: 60%;
+                }
+            }
+
+            backface-visibility: hidden;
+
+            &:hover {
+                .home-safety-card-front {
+                    transform: rotateY(180deg);
+                }
+
+                .home-safety-card-back {
+                    transform: rotateY(0deg);
+                }
+
+            }
+
+            &-back {
+
+                position: absolute;
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.8);
+                width: 100%;
+                backface-visibility: hidden;
+                border-radius: 2rem;
+                height: 100%;
+                display: flex;
+                transform: rotateY(-180deg);
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                &-header{
+                    font-size: 2rem;
+                }
+                &-paragraph{
+                    font-size: 1.6rem;    
+                }
+                &-flexbox{
+                    width: 80%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-between;
+                    align-items: flex-start;
+                    text-align: left;
+                }
+                flex-direction: column;
+                transition: all 1s;
+                perspective: 1000px;
+                box-shadow: 0 0 3rem rgba(0, 0, 0, 0.2);
+                // backface-visibility: hidden;
+            }
+
+            height: 40rem;
+            border-radius: 2rem;
+        }
     }
 }

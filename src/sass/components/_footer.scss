@@ -1,0 +1,34 @@
+.footer {
+
+    color: $secondary;
+    background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    height: 11rem;
+    padding:3rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    &-links {
+        cursor: pointer;
+        display:flex;
+        
+        width: 80%;
+        align-items: center;
+        max-width: 30rem;
+        img{
+            
+        transition: all 0.2s;
+            &:hover{
+                transform:scale(1.2)
+            }
+            height: 3rem;
+        }
+        justify-content: space-between;
+    }
+
+    justify-content: space-between;
+    align-items: center;
+}
