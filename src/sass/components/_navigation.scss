@@ -1,0 +1,81 @@
+.navbar {
+    &-checkbox {
+        display: none;
+    }
+
+    
+    &-checkbox:checked~&-menu {
+        padding:1rem 1rem 0;
+        height: 17rem;
+    }
+
+
+    &-checkbox:checked~&-menu {
+        .navbar-menu-inner {
+            overflow: visible;
+            height: 13rem;
+        }
+    }
+
+    &-menu {
+        overflow: hidden;
+
+        &-inner {
+            height: 0;
+            overflow: hidden;
+            transition: all 0.2s;
+
+            * {
+                margin: 1rem 0;
+            }
+        }
+
+        &-each {
+            position: relative;
+
+            &:hover {
+
+                p {
+                    opacity: 1;
+                    transition-delay: 1s;
+                }
+            }
+
+            &-tips {
+                bottom: 17rem;
+                transform: translate(0%, -100%);
+                left: 1rem;
+                color: $secondary;
+                padding: 1rem;
+                font-size: 1.3rem;
+                opacity: 0;
+                width: 7.5rem;
+                border-radius: 1rem;
+                background-color: $primary;
+                z-index: 30;
+                position: fixed;
+            }
+        }
+        &-label{
+            z-index: 40;
+            margin-top: 1.5rem;
+            padding-bottom: 1rem;
+            background-color: $primary;
+        }
+        cursor: pointer;
+        bottom:2rem;
+        display: flex;
+        flex-direction: column-reverse;
+        transition: all 0.2s;
+        width: 2rem;
+        left:2rem;
+        z-index: 20;
+        height: 2.2rem;
+        background-color: $primary;
+        padding:2rem 1rem;
+        padding-bottom:0;
+        border-radius: 1.5rem;
+        position: fixed;
+    }
+
+}

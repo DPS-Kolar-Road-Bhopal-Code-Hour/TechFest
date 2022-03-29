@@ -1,9 +1,28 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+
+
 }
+
 body {
     margin: 0;
     background-color: $secondary;
-    color:$primary;
+    color: $primary;
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+    }
+    &::-webkit-scrollbar {
+        width: 1.2rem;
+        background-color: $secondary;
+    }
+    &::-webkit-scrollbar-thumb {
+    
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-image: linear-gradient(to right top, #0052d4, #4364f7, #6fb1fc);
+        border-radius: 1rem;
+    }
 }
+
