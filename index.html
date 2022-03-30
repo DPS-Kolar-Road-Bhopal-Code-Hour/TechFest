@@ -6,51 +6,447 @@
     <script src='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.js'></script>
     <link href='https://unpkg.com/maplibre-gl@2.1.7/dist/maplibre-gl.css' rel='stylesheet' />
     <title>Voyages progressifs</title>
-
+    <meta name="description" content="We are a hosting service available worldwide. No matter where you go, we can provide you with a
+    range of accommodations to suit your needs. Besides that, our corporate goal is to spur progress in
+    underprivileged communities and areas; therefore, more than 80% of our profits go towards providing
+    education and internet access to impoverished communities.">
+    <meta name="og:description" content="We are a hosting service available worldwide. No matter where you go, we can provide you with a
+    range of accommodations to suit your needs. Besides that, our corporate goal is to spur progress in
+    underprivileged communities and areas; therefore, more than 80% of our profits go towards providing
+    education and internet access to impoverished communities.">
+    <link rel="icon" href="public/icon/favicon.ico">
+    <meta name="og:image" content="pubic/icon/favicon.ico">
     <link rel="stylesheet" href="public/css/index.css">
 </head>
 
-<div class="home">
+<div class="about">
+    <input type="checkbox" id="book" class="book-checkbox">
+    <div class="book-background">
 
+    </div>
+    <div class="book-container">
+        <div class="book-container-container">
+            <label for="book"><img alt="close" class="about-modals-each-close" src="public/img/cross.svg"></label>
+            <h3 class="book-container-header">Select a package</h3>
+            <div class="book-container-inner">
+                <div class="book-container-inner-packages">
+                    <input id="basic" type="radio" value="basic" checked name="package"
+                        class="book-container-inner-packages-input book-container-inner-packages-basic">
+                    <input id="premium" type="radio" value="premium" name="package"
+                        class="book-container-inner-packages-input book-container-inner-packages-premium">
+                    <input id="luxurious" type="radio" value="luxurious" name="package"
+                        class="book-container-inner-packages-input book-container-inner-packages-luxurious">
+                    <label for="basic" class="book-container-inner-packages-each">
+                        <h1 class="book-container-inner-packages-each-header">
+                            Basic
+                        </h1>
+                        <p class="book-container-inner-packages-each-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </label>
+                    <label for="premium" class="book-container-inner-packages-each">
+                        <h1 class="book-container-inner-packages-each-header">
+                            Premium
+                        </h1>
+                        <p class="book-container-inner-packages-each-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </label>
+                    <label for="luxurious" class="book-container-inner-packages-each">
+                        <h1 class="book-container-inner-packages-each-header">
+                            luxurious
+                        </h1>
+                        <p class="book-container-inner-packages-each-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </p>
+                    </label>
+                </div>
+                <button class="book-container-inner-next">Next</button>
+            </div>
+        </div>
+    </div>
+    <div class="book">
+
+    </div>
+
+    <div class="about-modals">
+        <input class="about-modals-inputs about-modals-inputs-indian" type="radio" name="cuisine" id="indian">
+        <input class="about-modals-inputs about-modals-inputs-caribbean" type="radio" name="cuisine" id="caribbean">
+        <input class="about-modals-inputs about-modals-inputs-chinese" type="radio" name="cuisine" id="chinese">
+        <input class="about-modals-inputs about-modals-inputs-korean" type="radio" name="cuisine" id="korean">
+        <input class="about-modals-inputs about-modals-inputs-none" type="radio" name="cuisine" id="none">
+
+        <div class="about-modals-each about-modals-indian">
+            <div class="about-modals-each-container">
+                <h1 class="about-modals-each-header">
+                    Indian Food
+                </h1>
+                <label for="none"><img alt="close" class="about-modals-each-close" src="public/img/cross.svg"></label>
+                <div class="about-modals-each-content">
+                    <div class="about-modals-each-paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+                    <div class="about-modals-each-imgs">
+                        <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
+                            src="public/img/room-3.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="about-modals-each about-modals-chinese">
+            <div class="about-modals-each-container">
+                <h1 class="about-modals-each-header">
+                    Chinese Food
+                </h1>
+                <label for="none"><img alt="close" class="about-modals-each-close" src="public/img/cross.svg"></label>
+                <div class="about-modals-each-content">
+                    <div class="about-modals-each-paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+                    <div class="about-modals-each-imgs">
+                        <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
+                            src="public/img/room-3.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="about-modals-each about-modals-caribbean">
+            <div class="about-modals-each-container">
+                <h1 class="about-modals-each-header">
+                    Caribbean Food
+                </h1>
+                <label for="none"><img alt="close" class="about-modals-each-close" src="public/img/cross.svg"></label>
+                <div class="about-modals-each-content">
+                    <div class="about-modals-each-paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+                    <div class="about-modals-each-imgs">
+                        <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
+                            src="public/img/room-3.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="about-modals-each about-modals-korean">
+            <div class="about-modals-each-container">
+                <h1 class="about-modals-each-header">
+                    Korean Food
+                </h1>
+                <label for="none"><img alt="close" class="about-modals-each-close" src="public/img/cross.svg"></label>
+                <div class="about-modals-each-content">
+                    <div class="about-modals-each-paragraph">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut
+                            aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum
+                            dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                            officia
+                            deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+                    <div class="about-modals-each-imgs">
+                        <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
+                            src="public/img/room-3.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
     <div class="navbar">
 
 
     </div>
-    <div class="home-header">
-        <div class="home-header-container">
+    <div class="about-header">
+        <div class="about-header-container">
+            <div class="about-header-main">
+                <h1 class="about-header-main-header">
+                    Welcome to <span class="home-header-name">Les Voyages progressifs!</span>
+                </h1>
+                <p class="about-header-main-content">
+                    We are a hosting service available worldwide. No matter where you go, we can provide you with a
+                    range of accommodations to suit your needs. Besides that, our corporate goal is to spur progress in
+                    underprivileged communities and areas; therefore, more than 80% of our profits go towards providing
+                    education and internet access to impoverished communities.
+                </p>
+                <div class="about-header-button">
+                    <p>Learn More</p> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                    </svg>
+                </div>
+            </div>
 
-            <h1 class="home-header-main">
-                Welcome to <span class="home-header-name">Les Voyages progressifs!</span>
-            </h1>
-            <p class="home-header-paragraph">
-                We are hosting service available worldwide. We're everywhere you go with a variety of accommodations to suit your needs. This official website allows you to find and book hotels according to the amenities you have, at affordable prices, suitable for the pleasant climate we offer.
-            </p>
-            <div class="home-header-button">Explore <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                    fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-                </svg> </div>
 
         </div>
+        <video class="about-header-video"
+            src="public/video/coverr--11-21-drone-man-swiming-in-crystal-clear-water_05-6281.mov" loop muted autoplay />
     </div>
-    <div class="home-explore">
-        <h2 class="home-explore-header">Explore</h2>
+    <div class="about-donations">
+        <h1 class="about-donations-header">Change the world while having fun!</h1>
+        <div class="about-donations-container">
+            <p class="about-donations-container-paragraph">
+                As aforementioned, we intend to utilize more than 80% of our earnings to sponsor impoverished
+                communities. Thus far, we have been able to assist disenfranchised communities in the sub-Saharan region
+                get access to the internet by getting them a stable internet connection and medium-end computers. The
+                internet is a crucial resource that can help spur education in said regions. You can be a part of our
+                mission by simply booking a fun vacation to the destination of your dreams!
 
-        <div class="home-map">
-            <div class="home-explore-right">
-                <h1>Have a look inside!</h1>
-                <p class="home-explore-paragraph">
-                    These are the different types of accomodations that we offer :
-                </p>
-                <div class="home-explore-right-imgs">
-                    <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
-                        src="public/img/room-3.jpg" alt=""><img src="public/img/room-4.jpg" alt=""><img
-                        src="public/img/room-5.jpg" alt="">
+            </p>
+            <div class="about-donations-container-stats">
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">Money Donated Today</p>
+                    <p class="about-donations-container-stats-each-stat">$1000</p>
+                </div>
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">Money Donated This Month</p>
+                    <p class="about-donations-container-stats-each-stat">$60000</p>
+                </div>
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">Money Donated This Year</p>
+                    <p class="about-donations-container-stats-each-stat">$1200000</p>
+                </div>
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">People Helped</p>
+                    <p class="about-donations-container-stats-each-stat">1200</p>
+                </div>
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">Computers Donated </p>
+                    <p class="about-donations-container-stats-each-stat">260</p>
+                </div>
+                <div class="about-donations-container-stats-each">
+                    <p class="about-donations-container-stats-each-header">Refugees Helped</p>
+                    <p class="about-donations-container-stats-each-stat">460</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="about-cuisines">
+        <h1 class="about-cuisines-header">
+            Cuisines Offered At Our Hotels
+        </h1>
+        <div class="about-cuisines-container">
+            <div class="about-cuisines-container-each">
+                <div class="about-cuisines-container-each-front">
+                    <h2 class="about-cuisines-container-each-name">
+                        Indian
+                    </h2>
+                </div>
+                <div class="about-cuisines-container-each-back">
+                    <p class="about-cuisines-container-each-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <label for="indian" class="about-cuisines-container-each-button">Learn More</label>
+                </div>
+            </div>
+            <div class="about-cuisines-container-each">
+                <div class="about-cuisines-container-each-front">
+                    <h2 class="about-cuisines-container-each-name">
+                        Chinese
+                    </h2>
+                </div>
+                <div class="about-cuisines-container-each-back">
+                    <p class="about-cuisines-container-each-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <label for="chinese" class="about-cuisines-container-each-button">Learn More</label>
+                </div>
+            </div>
+            <div class="about-cuisines-container-each">
+                <div class="about-cuisines-container-each-front">
+                    <h2 class="about-cuisines-container-each-name">
+                        Caribbean
+                    </h2>
+                </div>
+                <div class="about-cuisines-container-each-back">
+                    <p class="about-cuisines-container-each-paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <label for="caribbean" class="about-cuisines-container-each-button">Learn More</label>
+                </div>
+            </div>
+            <div class="about-cuisines-container-each">
+                <h2 class="about-cuisines-container-each-name">
+                    Korean
+                </h2>
+                <p class="about-cuisines-container-each-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <label for="korean" class="about-cuisines-container-each-button">Learn More</label>
+
+            </div>
+        </div>
+    </div>
+    <div class="about-testimonials">
+        <h1 class="about-testimonials-header">Here's what our customers say about us:</h1>
+        <div class="about-testimonials-container">
+            <div class="about-testimonials-each">
+                <h3 class="about-testimonials-each-content">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
+                </h3>
+                <div class="about-testimonials-each-author">
+                    <img class="about-testimonials-each-author-img"
+                        src="https://cdn2.mhpbooks.com/2014/03/test_ttp_big.jpg" alt="author">
+                    <h4 class="about-testimonials-each-author-name">Lorem Ipsum</h4>
+                </div>
+            </div>
+            <div class="about-testimonials-each">
+                <h3 class="about-testimonials-each-content">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
+                </h3>
+                <div class="about-testimonials-each-author">
+                    <img class="about-testimonials-each-author-img"
+                        src="https://cdn2.mhpbooks.com/2014/03/test_ttp_big.jpg" alt="author">
+                    <h4 class="about-testimonials-each-author-name">Lorem Ipsum</h4>
+                </div>
+            </div>
+            <div class="about-testimonials-each">
+                <h3 class="about-testimonials-each-content">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
+                </h3>
+                <div class="about-testimonials-each-author">
+                    <img class="about-testimonials-each-author-img"
+                        src="https://cdn2.mhpbooks.com/2014/03/test_ttp_big.jpg" alt="author">
+                    <h4 class="about-testimonials-each-author-name">Lorem Ipsum</h4>
+                </div>
+            </div>
+            <div class="about-testimonials-each">
+                <h3 class="about-testimonials-each-content">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
+                </h3>
+                <div class="about-testimonials-each-author">
+                    <img class="about-testimonials-each-author-img"
+                        src="https://cdn2.mhpbooks.com/2014/03/test_ttp_big.jpg" alt="author">
+                    <h4 class="about-testimonials-each-author-name">Lorem Ipsum</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <div class="home-safety">
         <h1 class="home-safety-header">Covid Safety Guidelines</h1>
         <div class="home-safety-container">
@@ -64,7 +460,11 @@
 
                         <h2 class="home-safety-card-back-header">Mask Mandates</h2>
                         <p class="home-safety-card-back-paragraph">
-                            The staff of the hotel wears masks and follow all the necessary norms to prevent the spread of air borne diseases. They follow social distancing. It is mandatory to wear masks in most countries, for more information, please contact the particular hotel you are going to stay in.
+                            The hotel staff wears masks and follow all the necessary norms to prevent the spread
+                            of air borne diseases. They follow social distancing. It is mandatory to wear masks in most
+                            countries, for more information, please contact the particular hotel you are going to stay
+                            in.
+
                         </p>
                     </div>
 
@@ -80,7 +480,11 @@
                     <div class="home-safety-card-back-flexbox">
                         <h2 class="home-safety-card-back-header">Vaccine Mandates</h2>
                         <p class="home-safety-card-back-paragraph">
-                            All the staff has taken all the doses of vaccine for COVID-19. We, the hotel management and staff, are doing everything we can to ensure that nothing goes wrong. To live in the hotels, you need to show the COVID-19 Vaccine certification to gain entry.
+                            All the staff has taken all the doses of the COVID-19 vaccine. We, the hotel management and
+                            staff, are doing everything we can to ensure that nothing goes wrong. To be eligible for a
+                            stay in the hotels,
+                            you need to show your COVID-19 Vaccination certificate.
+
                         </p>
                     </div>
 
@@ -96,9 +500,35 @@
                     <div class="home-safety-card-back-flexbox">
                         <h2 class="home-safety-card-back-header">Regular Sanitization</h2>
                         <p class="home-safety-card-back-paragraph">
-                            The staff does regular sanitization and after every contact with a person, sanitizes hand to reduce transmission of germs from one person to another. There is always complete hygienic condition in the premises.
+                            The staff does regular sanitization, and after every contact with a person, sanitizes hand
+                            to
+                            reduce transmission of germs from one person to another. There is always complete hygienic
+                            condition in the premises.
+
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home-explore">
+        <h2 class="home-explore-header">Explore</h2>
+
+        <div class="home-map">
+            <div class="home-explore-right">
+                <h1>Have a look inside!</h1>
+                <p class="home-explore-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat.
+                </p>
+                <div class="home-explore-right-imgs">
+                    <img src="public/img/room-1.webp" alt=""><img src="public/img/room-2.jpg" alt=""><img
+                        src="public/img/room-3.jpg" alt=""><img src="public/img/room-4.jpg" alt=""><img
+                        src="public/img/room-5.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -108,8 +538,10 @@
 </div>
 
 <script src="src/components/map.js"></script>
-<script src="src/controllers/home.js"></script>
+<script src="src/controllers/about.js"></script>
 <script src='src/components/footer.js'></script>
 <script src='src/components/navigation.js'></script>
+<script src='src/components/navigation.js'></script>
+<script src="src/components/modal.js"></script>
 
 </html>

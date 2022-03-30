@@ -2,6 +2,14 @@
     &-map {
         display: flex;
         width: 100%;
+
+        @include respond(small-tablet) {
+            display: flex;
+            margin: 5rem auto;
+            flex-direction: column-reverse;
+            // justify-content: 
+        }
+
         align-items: center;
         justify-content: space-between;
     }
@@ -17,10 +25,24 @@
         justify-content: space-between;
         align-items: center;
 
+        @include respond(small-tablet) {
+            display: block;
+            height: auto;
+            max-height: auto;
+        }
 
         border-radius: 3rem;
 
         &-right {
+            @include respond(small-tablet) {
+
+                width: 90%;
+                height: auto;
+                max-height: auto;
+                max-width: 100vw;
+                margin: 5rem auto;
+            }
+
             margin: 0 10rem 0 0;
             max-width: 50rem;
 
@@ -30,14 +52,13 @@
                 display: flex;
                 width: 100%;
 
-                // &:hover {
-                //     img {
-                //         &:not(:hover) {
-                //             filter: blur(.5rem);
-                //             top: 0;
-                //         }
-                //     }
-                // }
+                @include respond(small-tablet) {
+                    display: block;
+                    height: auto;
+                    max-height: auto;
+                    margin: 0 auto;
+                }
+
 
                 img {
                     border-radius: 1rem;
@@ -62,6 +83,12 @@
                     &:hover {
                         // left: 50%;
                         z-index: 5;
+                        @include respond(small-tablet) {
+                            transform: translate(0%, 0) scale(1.1);
+                            z-index: 20;
+                            
+                            backdrop-filter: none;
+                        }
                         // top: 50%;
                         // width: 100%;
 
@@ -84,6 +111,17 @@
                     cursor: pointer;
                     transform: translate(-50%, 0%);
                     position: absolute;
+
+                    @include respond(small-tablet) {
+                        margin: 2rem auto;
+                        position: relative;
+                        top: auto !important;
+                        width: 100%;
+                        left: auto !important;
+                        transform: translate(0%, 0%);
+
+                    }
+
                     width: 24rem;
                     transition: all 0.3s;
                 }
@@ -93,6 +131,13 @@
         // max-width: ;
         &-header {
             top: 0;
+
+            @include respond(small-tablet) {
+                right: 50%;
+
+                transform: rotate(0deg) translate(50%, -100%);
+            }
+
             right: 0;
             z-index: 10;
             transform: rotate(45deg) translate(10%, -100%);
@@ -111,7 +156,9 @@
 
     &-header {
         margin: 0 0 10rem;
-
+        @include respond(small-tablet) {
+            clip-path: none;
+        }
         &-main {
             font-size: 3.5rem;
         }
@@ -162,10 +209,87 @@
         background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
     }
 
+    &-about {
+        &-map {
+            .map {
+                margin: 0 auto !important;
+                width: 80% !important;
+                @include respond(small-tablet) {
+                   width: 100% !important
+                }
+            
+            }
+           
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        color: $secondary;
+        background-image: linear-gradient(90deg, #ff1b6b 0%, #45caff 100%);
+
+        &-container {
+            @include respond(small-tablet) {
+               display: block;
+             }
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-header {
+            @include respond(small-tablet) {
+             font-size: 2.4rem;
+            }
+            font-size: 3rem;
+        }
+
+        padding:3rem;
+        border-radius:2rem;
+        box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
+        width: 80%;
+        margin: 10rem auto;
+
+        font-size: 1.6rem;
+
+        &-left {
+            @include respond(small-tablet) {
+                width: 100%;
+            }
+            width: 50%;
+        }
+
+        &-right {
+            @include respond(small-tablet) {
+                width: 100%;
+                margin-left: 0;
+            }
+            margin-left: 4rem;
+            width: 50%;
+        }
+    }
+
+    &-news {
+        width: 80%;
+        padding: 4rem;
+        font-size: 1.6rem;
+
+        &-header {
+            margin-top: 1rem;
+            font-size: 3rem;
+        }
+
+        border-radius: 1rem;
+        box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
+        margin: 10rem auto;
+    }
+
     &-safety {
-        clip-path: polygon(20% 0%, 0% 20%, 0 100%, 100% 100%, 100% 20%, 80% 0%, 80% 20%, 70% 0%, 30% 0%, 20% 20% );
         background-image: linear-gradient(to right, #12af6e, #0f3443);
         text-align: center;
+
+
 
         &-header {
             font-size: 4rem;
@@ -177,10 +301,15 @@
             padding: 1rem;
             border-radius: 2rem;
         }
+
         margin-bottom: 10rem;
         padding:5rem 5rem 10rem;
 
         &-container {
+            @include respond(small-tablet) {
+                display: block;
+            }
+
             margin: 10rem 0 4rem 0;
             // padding: 
             display: flex;
@@ -191,6 +320,12 @@
 
         &-card {
             width: 30rem;
+
+            @include respond(small-tablet) {
+                display: block;
+                max-width: 80%;
+                margin: 5rem auto;
+            }
 
             &:nth-child(1) {
 
@@ -223,6 +358,7 @@
                     background-color: #8D0549;
                 }
             }
+
             perspective: 1000px;
             position: relative;
 
@@ -240,6 +376,7 @@
                 align-items: center;
                 transition: all 1s;
                 perspective: 1000px;
+
                 &-img {
                     width: 60%;
                 }
@@ -272,13 +409,16 @@
                 justify-content: center;
                 align-items: center;
                 color: #fff;
-                &-header{
+
+                &-header {
                     font-size: 2rem;
                 }
-                &-paragraph{
-                    font-size: 1.6rem;    
+
+                &-paragraph {
+                    font-size: 1.6rem;
                 }
-                &-flexbox{
+
+                &-flexbox {
                     width: 80%;
                     height: 80%;
                     display: flex;
@@ -287,6 +427,7 @@
                     align-items: flex-start;
                     text-align: left;
                 }
+
                 flex-direction: column;
                 transition: all 1s;
                 perspective: 1000px;
