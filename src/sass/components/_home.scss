@@ -164,9 +164,9 @@
 
     &-about {
         &-map {
-            *{
-                width: 100% !important;
-                max-width: 100vw !important; 
+            .map{ 
+                margin: 0 auto !important;      
+                width: 80% !important 
             }
             text-align: center;
             display: flex;
@@ -187,7 +187,7 @@
             font-size: 3rem;
         }
 
-        padding:2rem;
+        padding:3rem;
         border-radius:2rem;
         box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
         width: 80%;
@@ -204,7 +204,18 @@
             width: 50%;
         }
     }
-
+    &-news{
+        width: 80%;
+        padding: 4rem;
+        font-size: 1.6rem;
+        &-header{
+            margin-top:1rem;
+            font-size: 3rem;
+        }
+        border-radius: 1rem;
+        box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
+        margin: 10rem auto;
+    }
     &-safety {
         background-image: linear-gradient(to right, #12af6e, #0f3443);
         text-align: center;
