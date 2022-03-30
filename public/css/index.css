@@ -675,6 +675,56 @@ body::-webkit-scrollbar-thumb {
   margin: 0 0 3rem 0;
   font-size: 2.5rem;
 }
+.book-container-inner-final {
+  font-size: 1.8rem;
+  margin: 7rem 0 3rem;
+}
+.book-container-inner-form {
+  display: grid;
+  grid-gap: 6rem 4rem;
+  margin: 7rem 0 3rem;
+  grid-template-columns: 1fr 1fr;
+}
+.book-container-inner-form input {
+  padding: 2.5rem 1.5rem;
+  width: 80%;
+  height: 4.5rem;
+  background-color: #070707;
+  color: #E0DFDF;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+}
+.book-container-inner-form input::-webkit-outer-spin-button,
+.book-container-inner-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.book-container-inner-form div {
+  position: relative;
+}
+.book-container-inner-form input:not(:placeholder-shown) ~ label {
+  opacity: 1;
+}
+.book-container-inner-form input:focus ~ label {
+  opacity: 1;
+}
+.book-container-inner-form input:not(:placeholder-shown) {
+  border-bottom: 3px solid #7db808;
+}
+.book-container-inner-form input:focus {
+  border-bottom: 3px solid #D9DAD7;
+}
+.book-container-inner-form label {
+  top: 0;
+  transform: translate(0%, -100%);
+  left: 0rem;
+  transition: all 0.2s;
+  opacity: 0;
+  font-size: 1.4rem;
+  position: absolute;
+}
 .book-container-inner-next {
   text-transform: capitalize;
   padding: 1rem;

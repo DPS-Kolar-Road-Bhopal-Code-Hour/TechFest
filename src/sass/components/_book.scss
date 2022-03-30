@@ -10,6 +10,7 @@
     &-checkbox:checked~&-background {
         transform: translate(0, 0);
     }
+
     &-background {
         position: fixed;
         top: 0%;
@@ -24,6 +25,8 @@
     }
 
     &-container {
+
+
         &-container {
             position: relative;
         }
@@ -34,6 +37,65 @@
         }
 
         &-inner {
+            &-final{
+                font-size: 1.8rem;
+                margin: 7rem 0 3rem;
+            }
+            &-form {
+                display: grid;
+                grid-gap: 6rem 4rem;
+                margin: 7rem 0 3rem;
+
+                input {
+                    padding: 2.5rem 1.5rem;
+                    width: 80%;
+                    height: 4.5rem;
+                    background-color: $primary;
+                    color: $secondary;
+                    font-size: 2rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 1rem;
+                }
+
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                div {
+                    position: relative;
+                }
+
+                input:not(:placeholder-shown)~label {
+                    opacity: 1;
+                }
+
+                input:focus~label {
+                    opacity: 1;
+                }
+
+                input:not(:placeholder-shown) {
+                    border-bottom: 3px solid #7db808;
+                }
+
+                input:focus {
+                    border-bottom: 3px solid #D9DAD7;
+                }
+
+                label {
+                    top: 0;
+                    transform: translate(0%, -100%);
+                    left: 0rem;
+                    transition: all 0.2s;
+                    opacity: 0;
+                    font-size: 1.4rem;
+                    position: absolute;
+                }
+
+                grid-template-columns: 1fr 1fr;
+            }
 
             &-next {
                 text-transform: capitalize;
