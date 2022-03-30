@@ -1,0 +1,344 @@
+.about {
+    &-header {
+        overflow: hidden;
+        // clip-path: polygon(0 0, 0 70%, 30% 100%, 100% 100%, 100% 0%);
+        height: 100vh;
+        position: relative;
+
+        &-container {
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            background-image: linear-gradient(to right bottom, #141e30, #243b55, #243b55 60%, transparent 60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-button {
+            font-size: 2rem;
+            align-items: center;
+            width: 15rem;
+            margin-top: 4rem;
+            border-radius: 2rem;
+            padding: .5rem 1rem;
+            background-color: #243b55;
+            cursor: pointer;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        &-main {
+            &-header {
+                font-size: 3rem;
+            }
+
+            &-content {
+                font-size: 2rem;
+            }
+
+            border-radius: 1.5rem;
+            padding:2rem;
+            color:$secondary;
+            background-color: rgba(#141e30, 0.7);
+            width: 100%;
+            max-width: 60rem;
+        }
+
+        &-video {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &-modals {
+        &-inputs {
+            display: none;
+        }
+
+        &-indian {
+            background-image: linear-gradient(to top right, rgba(#D5891E, 1), rgba(#D5891E, 0.6)), url("../img/indian-food.jpg");
+
+            background-size: cover;
+        }
+
+        &-korean {
+            background-image: linear-gradient(to top right, rgba(#1E66D5, 1), rgba(#1E66D5, 0.7)), url("../img/korean-food.jpg");
+
+            background-size: cover;
+        }
+
+        &-caribbean {
+            background-size: cover;
+            background-image: linear-gradient(to top right, rgba(#521ED5, 1), rgba(#521ED5, 0.6)), url("../img/caribbean food.jpg");
+        }
+
+        &-chinese {
+            background-size: cover;
+            background-image: linear-gradient(to top right, rgba(#FF2500, 1), rgba(#FF2500, 0.3)), url("../img/chinese-food.jpg");
+        }
+
+
+
+
+
+
+        &-inputs-indian:checked~&-indian {
+            transform: translate(-50%, -50%);
+        }
+
+        &-inputs-chinese:checked~&-chinese {
+            transform: translate(-50%, -50%);
+        }
+
+        &-inputs-korean:checked~&-korean {
+            transform: translate(-50%, -50%);
+        }
+
+        &-inputs-caribbean:checked~&-caribbean {
+            transform: translate(-50%, -50%);
+        }
+
+        &-each {
+            border-radius: 2rem;
+
+            &-content {
+                // display: grid;
+                // grid-template-columns: 2fr 1fr;
+                // grid-gap: 3rem;
+            }
+
+            font-size: 1.6rem;
+            color:$secondary;
+
+            &-close {
+                position: absolute;
+                top: -3rem;
+                right: -2rem;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                width:3rem;
+                // top
+            }
+
+            &-container {
+                position: relative;
+                // display: ;
+            }
+
+            &-imgs {
+                display: flex;
+                width: 100%;
+                margin-top: 4rem;
+                justify-content: space-between;
+                // grid-template-columns: auto auto auto ; // grid-template-rows: ;
+
+                // display: block;
+                img {
+                    border-radius: 2rem;
+                    height: 10rem;
+                }
+
+            }
+
+            padding: 4rem 4rem;
+            // height: 80vh;
+            // min-height: 100;
+            top: 50%;
+            left: 50%;
+            transition: all 0.5s;
+            transform: translate(-50%, -200vh);
+            z-index: 50;
+            position: fixed;
+        }
+    }
+
+    &-donations {
+        &-container {
+            display: flex;
+            justify-content: space-between;
+
+            &-paragraph {
+                font-size: 2rem;
+                width: 40%;
+            }
+
+            &-stats {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-gap: 3rem;
+                &-each {
+                    &-stat {
+                        // display: inline-block;
+                        margin: 2rem auto;
+                        font-size: 2rem;
+                        font-weight: 900;
+                    }
+
+                    &-header {
+                        font-weight: 500;
+                        margin: 2rem auto 0;
+                        font-size: 1.2rem;
+                    }
+                    color:$secondary;
+                    background-image: linear-gradient(to top right, #16bffd, #cb3066);
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 15rem;
+                    padding: 1rem 2rem;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+
+        &-header {
+            font-size: 2.4rem;
+        }
+
+        border-radius: 2rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+        // background-color: rgba($primary, 0.3);
+        width: 90%;
+        margin: 8rem auto;
+        padding: 2rem 4rem;
+    }
+
+    &-cuisines {
+        &-header {
+            font-size: 3rem;
+        }
+
+        color:$secondary;
+        padding:4rem;
+        background-image: linear-gradient(to right, #ff4b1f, #ff9068);
+        ;
+
+        &-container {
+            &-each {
+                &-name {
+                    font-size: 2.5rem;
+                }
+
+                &-paragraph {
+                    font-size: 1.6rem;
+                }
+
+                &-button {
+                    border-radius: 1rem;
+                    padding: 1rem;
+                    background-image: linear-gradient(to right, #D8097E, #8C579C, #24468E);
+                    font-size: 2rem;
+                    display: inline-block;
+                    margin: 2rem auto;
+                    cursor: pointer;
+                    // margin-top: 2rem;
+                }
+
+                border-radius: 1.5rem;
+                padding: 2rem;
+
+                &:first-child {
+                    background-size: cover;
+                    background-image: linear-gradient(to top right, rgba(#D5891E, 1), rgba(#D5891E, 0.6)), url("../img/indian-food.jpg");
+                }
+
+                &:nth-child(2) {
+                    background-size: cover;
+                    background-image: linear-gradient(to top right, rgba(#FF2500, 1), rgba(#FF2500, 0.3)), url("../img/chinese-food.jpg");
+                }
+
+                &:nth-child(3) {
+                    background-size: cover;
+                    background-image: linear-gradient(to top right, rgba(#521ED5, 1), rgba(#521ED5, 0.6)), url("../img/caribbean food.jpg");
+                }
+
+                &:nth-child(4) {
+                    background-size: cover;
+                    background-image: linear-gradient(to top right, rgba(#1E66D5, 1), rgba(#1E66D5, 0.7)), url("../img/korean-food.jpg");
+                }
+
+                width: 20%;
+            }
+
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-testimonials {
+        &-each {
+            border: .5px solid rgba(#AEAFAE, 1);
+
+            &:first-child {
+                background-image: linear-gradient(to top right, #0052d4, #4364f7, #6fb1fc);
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(to top right, #2c3e50, #fd746c);
+            }
+
+            &:nth-child(3) {
+                background-image: linear-gradient(to top right, #e96443, #904e95);
+            }
+
+            &:nth-child(4) {
+                background-image: linear-gradient(to top right, #0b486b, #f56217);
+            }
+
+            color: $secondary;
+            padding:1rem 2rem 7rem;
+            border-radius: 1.5rem 1.5rem 1.5rem 0rem;
+            clip-path: polygon(0% 0%, 0 100%, 10% 90%, 100% 90%, 100% 0%);
+
+            &-content {
+                font-size: 1.6rem;
+            }
+
+            &-author {
+                display: flex;
+                width: 100%;
+                max-width: 20rem;
+                justify-content: center;
+                align-items: center;
+
+                &-img {
+                    margin-right: 1rem;
+                    border-radius: 100%;
+                    width: 5rem;
+                }
+
+                &-name {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &-container {
+            grid-gap: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        &-header {
+            font-size: 2.7rem;
+            margin-bottom: 4rem;
+        }
+
+        border-radius: 2rem;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+        // background-color: rgba($primary, 0.3);
+        width: 90%;
+        margin: 8rem auto;
+        padding:2rem 4rem;
+    }
+}
