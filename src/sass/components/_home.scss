@@ -162,8 +162,50 @@
         background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
     }
 
+    &-about {
+        &-map {
+            *{
+                width: 100% !important;
+                max-width: 100vw !important; 
+            }
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem auto;
+        }
+
+        color: $secondary;
+        background-image: linear-gradient(90deg, #ff1b6b 0%, #45caff 100%);
+
+        &-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-header {
+            font-size: 3rem;
+        }
+
+        padding:2rem;
+        border-radius:2rem;
+        box-shadow: 0 0 10rem rgba(0, 0, 0, 0.8);
+        width: 80%;
+        margin: 10rem auto;
+
+        font-size: 1.6rem;
+
+        &-left {
+            width: 50%;
+        }
+
+        &-right {
+            margin-left: 4rem;
+            width: 50%;
+        }
+    }
+
     &-safety {
-        clip-path: polygon(20% 0%, 0% 20%, 0 100%, 100% 100%, 100% 20%, 80% 0%, 80% 20%, 70% 0%, 30% 0%, 20% 20% );
         background-image: linear-gradient(to right, #12af6e, #0f3443);
         text-align: center;
 
@@ -177,6 +219,7 @@
             padding: 1rem;
             border-radius: 2rem;
         }
+
         margin-bottom: 10rem;
         padding:5rem 5rem 10rem;
 
@@ -223,6 +266,7 @@
                     background-color: #8D0549;
                 }
             }
+
             perspective: 1000px;
             position: relative;
 
@@ -240,6 +284,7 @@
                 align-items: center;
                 transition: all 1s;
                 perspective: 1000px;
+
                 &-img {
                     width: 60%;
                 }
@@ -272,13 +317,16 @@
                 justify-content: center;
                 align-items: center;
                 color: #fff;
-                &-header{
+
+                &-header {
                     font-size: 2rem;
                 }
-                &-paragraph{
-                    font-size: 1.6rem;    
+
+                &-paragraph {
+                    font-size: 1.6rem;
                 }
-                &-flexbox{
+
+                &-flexbox {
                     width: 80%;
                     height: 80%;
                     display: flex;
@@ -287,6 +335,7 @@
                     align-items: flex-start;
                     text-align: left;
                 }
+
                 flex-direction: column;
                 transition: all 1s;
                 perspective: 1000px;

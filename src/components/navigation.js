@@ -8,7 +8,7 @@ const innerContent = `
             <p class="navbar-menu-each-tips">Book a vacation</p>
         </label>
         <span class="navbar-menu-each">
-            <a href="info.html"><img alt="About" src="public/img/about.svg"></a>
+            <a href="about.html"><img alt="About" src="public/img/about.svg"></a>
             <p class="navbar-menu-each-tips">About Us</p>
         </span>
         <span class="navbar-menu-each">
