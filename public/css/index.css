@@ -44,6 +44,13 @@ body {
   border-radius: 2rem;
   max-height: 80rem;
 }
+.map-marked img {
+  margin: 1rem;
+  height: 5rem;
+  object-fit: crop;
+  border: 1px solid #000;
+  width: 5rem;
+}
 .map::-webkit-scrollbar {
   display: none !important;
 }
@@ -757,7 +764,14 @@ body {
   font-size: 2.5rem;
 }
 .about-cuisines-container-each-paragraph {
+  overflow: auto;
+  height: 32rem;
   font-size: 1.6rem;
+}
+@media (max-width: 1024px) {
+  .about-cuisines-container-each-paragraph {
+    height: auto;
+  }
 }
 .about-cuisines-container-each-button {
   border-radius: 1rem;
@@ -828,7 +842,13 @@ body {
   background-image: linear-gradient(to top right, #0b486b, #f56217);
 }
 .about-testimonials-each-content {
+  height: 27rem;
   font-size: 1.6rem;
+}
+@media (max-width: 700px) {
+  .about-testimonials-each-content {
+    height: auto;
+  }
 }
 .about-testimonials-each-author {
   display: flex;
@@ -841,6 +861,7 @@ body {
   margin-right: 1rem;
   border-radius: 100%;
   width: 5rem;
+  height: 5rem;
 }
 .about-testimonials-each-author-name {
   font-size: 1.6rem;
@@ -861,7 +882,7 @@ body {
 }
 @media (max-width: 700px) {
   .about-testimonials {
-    padding: 0;
+    padding: 2rem 1rem;
   }
 }
 

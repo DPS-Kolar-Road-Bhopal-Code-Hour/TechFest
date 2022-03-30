@@ -10,11 +10,18 @@ const map = new maplibregl.Map({
     zoom: 3
 });
 const markerMaker = (long, lat, color, name) => {
+    if (name === "Hong Kong") {
+        new maplibregl.Marker({
+                color,
+            }).setLngLat([long, lat]).setPopup(new maplibregl.Popup().setHTML(`<div class="map-marked"><h1>${name}</h1><p>Hotel Voyages progressifs at ${name} provides an exquisitely luxurious experience at an unbelievable price!</p><div><img src="public/img/cities/${name}/1.jpg"><img src="public/img/cities/${name}/2.jpg"><img src="public/img/cities/${name}/3.jpg"><img src="public/img/cities/${name}/4.jpg"><img src="public/img/cities/${name}/5.jpg"><img src="public/img/cities/${name}/6.jpg"></div></div>`))
+            .addTo(map);
+    } else {
+        new maplibregl.Marker({
+                color,
+            }).setLngLat([long, lat]).setPopup(new maplibregl.Popup().setHTML(`<div class="map-marked"><h1>${name}</h1><p>Hotel Voyages progressifs at ${name} provides an exquisitely luxurious experience at an unbelievable price!</p><div><img src="public/img/cities/${name}/1.png"><img src="public/img/cities/${name}/2.png"><img src="public/img/cities/${name}/3.png"><img src="public/img/cities/${name}/4.png"><img src="public/img/cities/${name}/5.png"><img src="public/img/cities/${name}/6.png"></div></div>`))
+            .addTo(map);
+    }
 
-    new maplibregl.Marker({
-            color,
-        }).setLngLat([long, lat]).setPopup(new maplibregl.Popup().setHTML(`<div><h1>${name}</h1><p>Hotel Voyages progressifs at ${name} provides an exquisitely luxurious experience at an unbelievable price!</p></div>`))
-        .addTo(map);
 }
 markerMaker(-122.431, 37.7733, '#6639F8', 'San Francisco')
 markerMaker(-122.3321, 47.6062, '#BEBFC0', 'Seattle')
