@@ -214,6 +214,7 @@
             .map {
                 margin: 0 auto !important;
                 width: 80% !important;
+                color:$primary !important;
                 @include respond(small-tablet) {
                    width: 100% !important
                 }

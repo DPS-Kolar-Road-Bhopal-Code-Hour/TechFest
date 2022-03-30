@@ -262,6 +262,7 @@ body {
 .home-about-map .map {
   margin: 0 auto !important;
   width: 80% !important;
+  color: #070707 !important;
 }
 @media (max-width: 700px) {
   .home-about-map .map {
@@ -615,6 +616,8 @@ body {
 }
 .about-modals-each {
   border-radius: 2rem;
+  max-height: 80vh;
+  overflow-x: auto;
   font-size: 1.6rem;
   color: #E0DFDF;
   padding: 4rem 4rem;
