@@ -32,34 +32,53 @@
         }
 
         &-header {
+            @include respond(small-tablet) {
+                width: 80%;
+            }
             margin: 0 0 3rem 0;
             font-size: 2.5rem;
         }
 
         &-inner {
-            &-final{
-                h3{
+            &-final {
+                h3 {
                     font-size: 4rem;
                 }
+
                 font-size: 2rem;
                 margin: 7rem 0 3rem;
             }
+
             &-form {
                 display: grid;
                 grid-gap: 6rem 4rem;
                 margin: 7rem 0 3rem;
-                select{
+                @include respond(small-tablet) {
+                    // grid-gap: 6rem 2rem;
+                    display: block;
+                }
+
+                select {
                     background-color: $primary;
-                    color:$secondary;
+                    color: $secondary;
                     font-size: 1.6rem;
-                    padding:1rem;
-                    border:none;
-                    outline:none;
+                    padding: 1rem;
+                    border: none;
+                    outline: none;
+                    @include respond(small-tablet) {
+                        width: 100%;
+                        margin: 2rem auto;
+                    }
                     border-radius: 1rem;
                 }
+
                 input {
                     padding: 2.5rem 1.5rem;
                     width: 80%;
+                    @include respond(small-tablet) {
+                        width: 100%;
+                        margin: 2rem auto;
+                    }
                     height: 4.5rem;
                     background-color: $primary;
                     color: $secondary;
@@ -137,23 +156,29 @@
 
                 &-premium:checked~&-each {
                     &:nth-child(5) {
-
                         background-color: rgba(0, 0, 0, 0.4);
                     }
                 }
 
                 &-luxurious:checked~&-each {
                     &:nth-child(6) {
-
                         background-color: rgba(0, 0, 0, 0.4);
                     }
                 }
 
                 &-each {
+                    @include respond(small-tablet) {
+                        width: 80%;
+                        margin: 0rem auto;
+                    }
+
                     cursor: pointer;
                     transition: all 0.2s;
 
                     &:last-child {
+                        @include respond(small-tablet) {
+                            margin: 0rem auto;
+                        }
                         margin-right: 0;
                     }
 
@@ -163,6 +188,11 @@
 
                     border-radius: 1.5rem;
                     padding: 2rem;
+                }
+
+                @include respond(small-tablet) {
+                    // display: block;
+                    flex-direction: column;
                 }
 
                 display: flex;
@@ -180,6 +210,8 @@
         min-height: 36rem;
         z-index: 120;
         transform: translate(-50%, -200vh);
+        overflow-y: auto;
+        max-height: 80vh;
         background-image: linear-gradient(to right, #360033, #0b8793);
     }
 }

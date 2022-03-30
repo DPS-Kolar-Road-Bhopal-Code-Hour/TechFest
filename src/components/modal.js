@@ -68,10 +68,8 @@ next.addEventListener('click', () => {
         <p class="book-container-inner-final-para"></p>
         </div>`;
         let para1 = document.querySelector('.book-container-inner-final-para');
-        
         let tomorrow = new Date();
         tomorrow.setDate(tomorrow.getDate() + 1);
-        
         setInterval(() => {
             let today = new Date()
             let time = new Date(tomorrow - today);
