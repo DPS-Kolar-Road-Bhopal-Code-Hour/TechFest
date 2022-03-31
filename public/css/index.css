@@ -435,7 +435,7 @@ body {
 .footer {
   color: #E0DFDF;
   background-image: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
-  height: 11rem;
+  height: 15rem;
   padding: 3rem 0 5rem;
   display: flex;
   flex-direction: column;
@@ -445,9 +445,13 @@ body {
 .footer h3 {
   font-size: 1.8rem;
 }
+.footer-text {
+  font-size: 1.3rem;
+}
 .footer-links {
   cursor: pointer;
   display: flex;
+  margin: 2rem auto;
   width: 80%;
   align-items: center;
   max-width: 30rem;
